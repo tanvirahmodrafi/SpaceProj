@@ -18,7 +18,7 @@ struct NewsView: View {
         
         List{
             ForEach(data.news){ news in
-                NewsArticle(title: news.title, imageUrl: news.image_url, siteName: news.news_site, summary: news.summary)
+                NewsArticle(title: news.title, imageUrl: news.imageURL, siteName: news.newsSite, summary: news.summary)
                     .onTapGesture {
                         openURL(URL(string: news.url)!)
                     }

@@ -7,15 +7,15 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "24B6D973-95B4-468C-B801-EAF9693CE447"
-            shouldBeEnabled = "No"
+            uuid = "6513BE98-781F-4E57-8377-56CD3F19EA10"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpaceProj/API/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "43"
-            endingLineNumber = "43"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "getData()"
             landmarkType = "7">
          </BreakpointContent>
@@ -23,49 +23,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "C8AD7F08-E58D-43A1-ABB0-450D0A80EFB3"
+            uuid = "036E2CFE-652D-40EE-9256-02D09388A5EC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceProj/API/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "getData()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "036E2CFE-652D-40EE-9256-02D09388A5EC - 2c4d7ac8a6c252d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceProj.SpaceAPI.getData() -&gt; ()"
+                  moduleName = "SpaceProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/PlayGround/Programming/Swift/SpaceProj/SpaceProj/API/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "856">
+               </Location>
+               <Location
+                  uuid = "036E2CFE-652D-40EE-9256-02D09388A5EC - 2c4d7ac8a6c252d0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceProj.SpaceAPI.getData() -&gt; ()"
+                  moduleName = "SpaceProj"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Applications/PlayGround/Programming/Swift/SpaceProj/SpaceProj/API/APIClient.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
+                  offsetFromSymbolStart = "956">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "368584D6-FB56-4DB5-BFFD-5A9F42C4956C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "SpaceProj/API/APIClient.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "40"
-            endingLineNumber = "40"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
             landmarkName = "getData()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C8AD7F08-E58D-43A1-ABB0-450D0A80EFB3 - 2c4d7ac8a6c25fb4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceProj.SpaceAPI.getData() -&gt; ()"
-                  moduleName = "SpaceProj"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/PlayGround/Programming/Swift/SpaceProj/SpaceProj/API/APIClient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "836">
-               </Location>
-               <Location
-                  uuid = "C8AD7F08-E58D-43A1-ABB0-450D0A80EFB3 - 2c4d7ac8a6c25fb4"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in SpaceProj.SpaceAPI.getData() -&gt; ()"
-                  moduleName = "SpaceProj"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Applications/PlayGround/Programming/Swift/SpaceProj/SpaceProj/API/APIClient.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "40"
-                  endingLineNumber = "40"
-                  offsetFromSymbolStart = "936">
-               </Location>
-            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C2770577-F654-47D4-AD3D-2B71FAEBB734"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SpaceProj/API/APIClient.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "getData()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

@@ -8,19 +8,52 @@
 
 import Foundation
 
-struct SpaceData : Codable,Identifiable {
+struct launches : Codable {
+    var launchID: String
+    var provider: String
+    
+    enum CodingKeys: String, CodingKey {
+            case launchID = "launch_id"
+            case provider
+        }
+    
+}
+struct provider : Codable {
+    var provider: String
+}
+
+struct News : Codable, Identifiable {
     var id: Int
     var title: String
     var url: String
-    var image_url: String
-    var news_site: String
+    var imageURL: String
+    var newsSite: String
     var summary: String
-    var published_at: String
+    var publishedAt: String
+    var updatedAt: String
+    var featured: Bool
+    var launches: [launches]
+//    var events: [provider]
     
+    enum CodingKeys: String, CodingKey {
+           case id, title, url
+           case imageURL = "image_url"
+           case newsSite = "news_site"
+           case summary
+           case publishedAt = "published_at"
+           case updatedAt = "updated_at"
+           case featured, launches
+       }
+}
+
+struct SpaceData : Codable{
+    let count: Int
+    let next, previous: String
+    let results: [News]
 }
 
 @MainActor class SpaceAPI : ObservableObject {
-    @Published var news: [SpaceData] = []
+    @Published var news: [News] = []
     
     func getData(){
         guard let url = URL(string:"https://api.spaceflightnewsapi.net/v4/articles?_limit=10") else {
@@ -30,21 +63,21 @@ struct SpaceData : Codable,Identifiable {
             guard let data = data else{
                 let tempError = error!.localizedDescription
                 DispatchQueue.main.async {
-                    self.news = [SpaceData(id: 0, title: tempError, url: "Error", image_url: "Error", news_site: "Title Error", summary: "Try swiping dawn to refresh as soon as you have internet", published_at: "Error")]
+//                    self.news = [SpaceData(id: 0, title: tempError, url: "Error", image_url: "Error", news_site: "Title Error", summary: "Try swiping dawn to refresh as soon as you have internet", published_at: "Error")]
                 }
+                debugPrint(tempError)
                 return
             }
-            let jsonData = try! JSONSerialization.data(withJSONObject: data)
-
-            // Convert to a string and print
-            if let JSONString = String(data: jsonData, encoding: String.Encoding.utf8) {
-               print(JSONString)
-            }
-            let spaceData = try! JSONDecoder().decode([SpaceData].self, from: data)
             
-            DispatchQueue.main.async {
-                print("Loaded new data successfully. Articles: \(spaceData.count)")
-                self.news = spaceData
+            do {
+                let spaceData = try JSONDecoder().decode(SpaceData.self, from: data)
+                
+                DispatchQueue.main.async {
+                    print("Loaded new data successfully. Articles: \(spaceData.count)")
+                    self.news = spaceData.results
+                }
+            } catch {
+                debugPrint(error.localizedDescription)
             }
         }.resume()
     }
